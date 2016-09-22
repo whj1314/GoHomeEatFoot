@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D56E10F3EDED9249F4DA0F6 /* libPods-DaDaCook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C5C00B676387471B2FD2AB /* libPods-DaDaCook.a */; };
+		851561D41D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 851561D31D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.m */; };
+		851562401D702EDB00821BFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8515623F1D702EDB00821BFA /* MapKit.framework */; };
+		851562441D70332400821BFA /* TRKitchenMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851562431D70332400821BFA /* TRKitchenMapViewController.m */; };
+		851C6F7F1D6436330080DA05 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851C6F7E1D6436330080DA05 /* Discover.storyboard */; };
+		851C6F811D6437120080DA05 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851C6F801D6437120080DA05 /* Mine.storyboard */; };
+		851C6F831D6437780080DA05 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851C6F821D6437780080DA05 /* Home.storyboard */; };
+		851C6F861D643ADD0080DA05 /* TRMyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C6F851D643ADD0080DA05 /* TRMyTabBarController.m */; };
+		851C6F891D644EC60080DA05 /* TRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C6F881D644EC60080DA05 /* TRHomeViewController.m */; };
+		851C6F8C1D64522E0080DA05 /* TRHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C6F8B1D64522E0080DA05 /* TRHomeHeaderView.m */; };
+		851C6F8F1D645FAE0080DA05 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C6F8E1D645FAE0080DA05 /* BaseViewModel.m */; };
+		851C6F921D645FC10080DA05 /* TRHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C6F911D645FC10080DA05 /* TRHomeViewModel.m */; };
+		8522D76E1D6D7AF500FCB7B8 /* TRCommonDishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8522D76D1D6D7AF500FCB7B8 /* TRCommonDishCell.m */; };
+		8522D7711D6D7F2900FCB7B8 /* TRDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8522D7701D6D7F2900FCB7B8 /* TRDetailViewModel.m */; };
+		8524FAD61D6AA4500009513E /* TRHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524FAD51D6AA4500009513E /* TRHomeCell.m */; };
+		852758F01D6ECBBA00C50198 /* TRRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852758EF1D6ECBBA00C50198 /* TRRecommendCell.m */; };
+		852758FA1D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 852758F31D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.m */; };
+		852758FB1D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 852758F51D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.m */; };
+		852758FC1D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852758F71D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.m */; };
+		852758FD1D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 852758F91D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		853BF6171D658922003077C1 /* TRActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BF6161D658922003077C1 /* TRActivityModel.m */; };
+		855F97761D6C2E6700EE5D3D /* TRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F97741D6C2E6700EE5D3D /* TRDetailViewController.m */; };
+		855F97791D6C2EC000EE5D3D /* TRDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F97781D6C2EC000EE5D3D /* TRDetailModel.m */; };
+		855F977C1D6C38DC00EE5D3D /* TRDetailTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F977B1D6C38DC00EE5D3D /* TRDetailTagsModel.m */; };
+		855F977F1D6C4E5D00EE5D3D /* TRDishListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F977E1D6C4E5D00EE5D3D /* TRDishListModel.m */; };
+		855F97821D6C52AD00EE5D3D /* TRLastCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F97811D6C52AD00EE5D3D /* TRLastCommentModel.m */; };
+		8584A5091D62EA2200E5A732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5081D62EA2200E5A732 /* main.m */; };
+		8584A50C1D62EA2200E5A732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A50B1D62EA2200E5A732 /* AppDelegate.m */; };
+		8584A5121D62EA2300E5A732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8584A5101D62EA2300E5A732 /* Main.storyboard */; };
+		8584A5141D62EA2300E5A732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8584A5131D62EA2300E5A732 /* Assets.xcassets */; };
+		8584A5171D62EA2300E5A732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8584A5151D62EA2300E5A732 /* LaunchScreen.storyboard */; };
+		8584A52A1D62EC4200E5A732 /* DiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5291D62EC4200E5A732 /* DiscoverModel.m */; };
+		8584A52D1D62EC6C00E5A732 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A52C1D62EC6C00E5A732 /* DiscoverViewModel.m */; };
+		8584A5311D62ECDA00E5A732 /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A52F1D62ECDA00E5A732 /* DiscoverCell.m */; };
+		8584A5321D62ECDA00E5A732 /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8584A5301D62ECDA00E5A732 /* DiscoverCell.xib */; };
+		8584A5351D62ECF900E5A732 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5341D62ECF900E5A732 /* DiscoverViewController.m */; };
+		8584A53D1D62FDF000E5A732 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8584A53F1D62FDF000E5A732 /* InfoPlist.strings */; };
+		8584A54E1D62FFE300E5A732 /* AppDelegate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5451D62FFE300E5A732 /* AppDelegate+Custom.m */; };
+		8584A54F1D62FFE300E5A732 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5471D62FFE300E5A732 /* NSObject+Parse.m */; };
+		8584A5501D62FFE300E5A732 /* NSString+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5491D62FFE300E5A732 /* NSString+YX.m */; };
+		8584A5511D62FFE300E5A732 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A54B1D62FFE300E5A732 /* UIScrollView+Refresh.m */; };
+		8584A5521D62FFE300E5A732 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A54D1D62FFE300E5A732 /* UIView+HUD.m */; };
+		8584A5561D63017300E5A732 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5551D63017300E5A732 /* BaseNetworking.m */; };
+		8584A5591D63050900E5A732 /* TRNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5581D63050900E5A732 /* TRNetManager.m */; };
+		8584A5661D63070200E5A732 /* TRUFocusListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5651D63070200E5A732 /* TRUFocusListModel.m */; };
+		8584A5691D63071700E5A732 /* TRSearchTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A5681D63071700E5A732 /* TRSearchTagModel.m */; };
+		8584A56C1D63073A00E5A732 /* TRHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584A56B1D63073A00E5A732 /* TRHomePageModel.m */; };
+		85FA431D1D6545E6005CC5E5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA431C1D6545E6005CC5E5 /* iCarousel.m */; };
+		85FE26691D66FE5700ED9CA2 /* TRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE26681D66FE5700ED9CA2 /* TRMineViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		851561D21D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		851561D31D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		8515623F1D702EDB00821BFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		851562421D70332400821BFA /* TRKitchenMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRKitchenMapViewController.h; sourceTree = "<group>"; };
+		851562431D70332400821BFA /* TRKitchenMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRKitchenMapViewController.m; sourceTree = "<group>"; };
+		851C6F7E1D6436330080DA05 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = "../Application/发现/Discover.storyboard"; sourceTree = "<group>"; };
+		851C6F801D6437120080DA05 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mine.storyboard; path = "../Application/我的/Mine.storyboard"; sourceTree = "<group>"; };
+		851C6F821D6437780080DA05 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = "../Application/首页/Home.storyboard"; sourceTree = "<group>"; };
+		851C6F841D643ADD0080DA05 /* TRMyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMyTabBarController.h; sourceTree = "<group>"; };
+		851C6F851D643ADD0080DA05 /* TRMyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMyTabBarController.m; sourceTree = "<group>"; };
+		851C6F871D644EC60080DA05 /* TRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHomeViewController.h; sourceTree = "<group>"; };
+		851C6F881D644EC60080DA05 /* TRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHomeViewController.m; sourceTree = "<group>"; };
+		851C6F8A1D64522E0080DA05 /* TRHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHomeHeaderView.h; sourceTree = "<group>"; };
+		851C6F8B1D64522E0080DA05 /* TRHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHomeHeaderView.m; sourceTree = "<group>"; };
+		851C6F8D1D645FAE0080DA05 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		851C6F8E1D645FAE0080DA05 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		851C6F901D645FC10080DA05 /* TRHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHomeViewModel.h; sourceTree = "<group>"; };
+		851C6F911D645FC10080DA05 /* TRHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHomeViewModel.m; sourceTree = "<group>"; };
+		8522D76C1D6D7AF400FCB7B8 /* TRCommonDishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCommonDishCell.h; sourceTree = "<group>"; };
+		8522D76D1D6D7AF500FCB7B8 /* TRCommonDishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCommonDishCell.m; sourceTree = "<group>"; };
+		8522D76F1D6D7F2900FCB7B8 /* TRDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDetailViewModel.h; sourceTree = "<group>"; };
+		8522D7701D6D7F2900FCB7B8 /* TRDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDetailViewModel.m; sourceTree = "<group>"; };
+		8524FAD41D6AA4500009513E /* TRHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHomeCell.h; sourceTree = "<group>"; };
+		8524FAD51D6AA4500009513E /* TRHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHomeCell.m; sourceTree = "<group>"; };
+		852758EE1D6ECBBA00C50198 /* TRRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRecommendCell.h; sourceTree = "<group>"; };
+		852758EF1D6ECBBA00C50198 /* TRRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRecommendCell.m; sourceTree = "<group>"; };
+		852758F21D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		852758F31D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		852758F41D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		852758F51D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		852758F61D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		852758F71D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		852758F81D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		852758F91D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		853BF6151D658922003077C1 /* TRActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRActivityModel.h; sourceTree = "<group>"; };
+		853BF6161D658922003077C1 /* TRActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRActivityModel.m; sourceTree = "<group>"; };
+		855F97731D6C2E6700EE5D3D /* TRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDetailViewController.h; sourceTree = "<group>"; };
+		855F97741D6C2E6700EE5D3D /* TRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDetailViewController.m; sourceTree = "<group>"; };
+		855F97771D6C2EC000EE5D3D /* TRDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDetailModel.h; sourceTree = "<group>"; };
+		855F97781D6C2EC000EE5D3D /* TRDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDetailModel.m; sourceTree = "<group>"; };
+		855F977A1D6C38DC00EE5D3D /* TRDetailTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDetailTagsModel.h; sourceTree = "<group>"; };
+		855F977B1D6C38DC00EE5D3D /* TRDetailTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDetailTagsModel.m; sourceTree = "<group>"; };
+		855F977D1D6C4E5D00EE5D3D /* TRDishListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDishListModel.h; sourceTree = "<group>"; };
+		855F977E1D6C4E5D00EE5D3D /* TRDishListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDishListModel.m; sourceTree = "<group>"; };
+		855F97801D6C52AD00EE5D3D /* TRLastCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRLastCommentModel.h; sourceTree = "<group>"; };
+		855F97811D6C52AD00EE5D3D /* TRLastCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLastCommentModel.m; sourceTree = "<group>"; };
+		8584A5041D62EA2200E5A732 /* DaDaCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaDaCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8584A5081D62EA2200E5A732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8584A50A1D62EA2200E5A732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		8584A50B1D62EA2200E5A732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		8584A5111D62EA2300E5A732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8584A5131D62EA2300E5A732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		8584A5161D62EA2300E5A732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8584A5181D62EA2300E5A732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8584A5281D62EC4200E5A732 /* DiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverModel.h; sourceTree = "<group>"; };
+		8584A5291D62EC4200E5A732 /* DiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverModel.m; sourceTree = "<group>"; };
+		8584A52B1D62EC6C00E5A732 /* DiscoverViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewModel.h; sourceTree = "<group>"; };
+		8584A52C1D62EC6C00E5A732 /* DiscoverViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewModel.m; sourceTree = "<group>"; };
+		8584A52E1D62ECDA00E5A732 /* DiscoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
+		8584A52F1D62ECDA00E5A732 /* DiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
+		8584A5301D62ECDA00E5A732 /* DiscoverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
+		8584A5331D62ECF900E5A732 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		8584A5341D62ECF900E5A732 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		8584A53A1D62F91000E5A732 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8584A53E1D62FDF000E5A732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8584A5401D62FDFB00E5A732 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		8584A5411D62FDFB00E5A732 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8584A5421D62FDFB00E5A732 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8584A5431D62FE0300E5A732 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8584A5441D62FFE300E5A732 /* AppDelegate+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Custom.h"; sourceTree = "<group>"; };
+		8584A5451D62FFE300E5A732 /* AppDelegate+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Custom.m"; sourceTree = "<group>"; };
+		8584A5461D62FFE300E5A732 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		8584A5471D62FFE300E5A732 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		8584A5481D62FFE300E5A732 /* NSString+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YX.h"; sourceTree = "<group>"; };
+		8584A5491D62FFE300E5A732 /* NSString+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YX.m"; sourceTree = "<group>"; };
+		8584A54A1D62FFE300E5A732 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		8584A54B1D62FFE300E5A732 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		8584A54C1D62FFE300E5A732 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		8584A54D1D62FFE300E5A732 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		8584A5531D6300F200E5A732 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8584A5541D63017300E5A732 /* BaseNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
+		8584A5551D63017300E5A732 /* BaseNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
+		8584A5571D63050900E5A732 /* TRNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNetManager.h; sourceTree = "<group>"; };
+		8584A5581D63050900E5A732 /* TRNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNetManager.m; sourceTree = "<group>"; };
+		8584A5641D63070200E5A732 /* TRUFocusListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUFocusListModel.h; sourceTree = "<group>"; };
+		8584A5651D63070200E5A732 /* TRUFocusListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUFocusListModel.m; sourceTree = "<group>"; };
+		8584A5671D63071700E5A732 /* TRSearchTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSearchTagModel.h; sourceTree = "<group>"; };
+		8584A5681D63071700E5A732 /* TRSearchTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSearchTagModel.m; sourceTree = "<group>"; };
+		8584A56A1D63073A00E5A732 /* TRHomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHomePageModel.h; sourceTree = "<group>"; };
+		8584A56B1D63073A00E5A732 /* TRHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHomePageModel.m; sourceTree = "<group>"; };
+		8584A56D1D63077000E5A732 /* TRRequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRRequestPath.h; sourceTree = "<group>"; };
+		85FA431B1D6545E6005CC5E5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		85FA431C1D6545E6005CC5E5 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		85FE26671D66FE5700ED9CA2 /* TRMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMineViewController.h; sourceTree = "<group>"; };
+		85FE26681D66FE5700ED9CA2 /* TRMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMineViewController.m; sourceTree = "<group>"; };
+		B2C5C00B676387471B2FD2AB /* libPods-DaDaCook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaDaCook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFE654940673BD48956B24A /* Pods-DaDaCook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaDaCook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaDaCook/Pods-DaDaCook.debug.xcconfig"; sourceTree = "<group>"; };
+		D16482D8FAB77A78AC24BCB0 /* Pods-DaDaCook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaDaCook.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaDaCook/Pods-DaDaCook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8584A5011D62EA2200E5A732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851562401D702EDB00821BFA /* MapKit.framework in Frameworks */,
+				0D56E10F3EDED9249F4DA0F6 /* libPods-DaDaCook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D8AEEC0D0CAEFF3CF280CA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8515623F1D702EDB00821BFA /* MapKit.framework */,
+				B2C5C00B676387471B2FD2AB /* libPods-DaDaCook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		851562411D70331100821BFA /* 厨房地图 */ = {
+			isa = PBXGroup;
+			children = (
+				851562421D70332400821BFA /* TRKitchenMapViewController.h */,
+				851562431D70332400821BFA /* TRKitchenMapViewController.m */,
+			);
+			path = "厨房地图";
+			sourceTree = "<group>";
+		};
+		852758F11D6ECF5500C50198 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				852758F21D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.h */,
+				852758F31D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.m */,
+				852758F41D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.h */,
+				852758F51D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.m */,
+				852758F61D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.h */,
+				852758F71D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.m */,
+				852758F81D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				852758F91D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		855F976C1D6C1F4900EE5D3D /* 首页详情 */ = {
+			isa = PBXGroup;
+			children = (
+				855F97701D6C2E6700EE5D3D /* Model */,
+				855F97711D6C2E6700EE5D3D /* View */,
+				855F97721D6C2E6700EE5D3D /* ViewController */,
+				855F97751D6C2E6700EE5D3D /* ViewModel */,
+			);
+			path = "首页详情";
+			sourceTree = "<group>";
+		};
+		855F97701D6C2E6700EE5D3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				855F97771D6C2EC000EE5D3D /* TRDetailModel.h */,
+				855F97781D6C2EC000EE5D3D /* TRDetailModel.m */,
+				855F977A1D6C38DC00EE5D3D /* TRDetailTagsModel.h */,
+				855F977B1D6C38DC00EE5D3D /* TRDetailTagsModel.m */,
+				855F977D1D6C4E5D00EE5D3D /* TRDishListModel.h */,
+				855F977E1D6C4E5D00EE5D3D /* TRDishListModel.m */,
+				855F97801D6C52AD00EE5D3D /* TRLastCommentModel.h */,
+				855F97811D6C52AD00EE5D3D /* TRLastCommentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		855F97711D6C2E6700EE5D3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8522D76C1D6D7AF400FCB7B8 /* TRCommonDishCell.h */,
+				8522D76D1D6D7AF500FCB7B8 /* TRCommonDishCell.m */,
+				852758EE1D6ECBBA00C50198 /* TRRecommendCell.h */,
+				852758EF1D6ECBBA00C50198 /* TRRecommendCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		855F97721D6C2E6700EE5D3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				855F97731D6C2E6700EE5D3D /* TRDetailViewController.h */,
+				855F97741D6C2E6700EE5D3D /* TRDetailViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		855F97751D6C2E6700EE5D3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8522D76F1D6D7F2900FCB7B8 /* TRDetailViewModel.h */,
+				8522D7701D6D7F2900FCB7B8 /* TRDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8584A4FB1D62EA2200E5A732 = {
+			isa = PBXGroup;
+			children = (
+				8584A5061D62EA2200E5A732 /* DaDaCook */,
+				8584A5051D62EA2200E5A732 /* Products */,
+				A44185A26DDC82A89CF87F79 /* Pods */,
+				1D8AEEC0D0CAEFF3CF280CA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8584A5051D62EA2200E5A732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5041D62EA2200E5A732 /* DaDaCook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8584A5061D62EA2200E5A732 /* DaDaCook */ = {
+			isa = PBXGroup;
+			children = (
+				8584A51E1D62EBC400E5A732 /* Application */,
+				8584A5221D62EBC400E5A732 /* Category */,
+				8584A5231D62EBC400E5A732 /* Define */,
+				8584A5241D62EBC400E5A732 /* NetManager */,
+				8584A5251D62EBC400E5A732 /* Resource */,
+				8584A5261D62EBC400E5A732 /* Tool */,
+				8584A5271D62EBC400E5A732 /* Vendor */,
+				8584A5071D62EA2200E5A732 /* Supporting Files */,
+			);
+			path = DaDaCook;
+			sourceTree = "<group>";
+		};
+		8584A5071D62EA2200E5A732 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5181D62EA2300E5A732 /* Info.plist */,
+				8584A5081D62EA2200E5A732 /* main.m */,
+				8584A53A1D62F91000E5A732 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8584A51E1D62EBC400E5A732 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8584A50A1D62EA2200E5A732 /* AppDelegate.h */,
+				8584A50B1D62EA2200E5A732 /* AppDelegate.m */,
+				851562411D70331100821BFA /* 厨房地图 */,
+				855F976C1D6C1F4900EE5D3D /* 首页详情 */,
+				8584A51F1D62EBC400E5A732 /* 发现 */,
+				8584A5201D62EBC400E5A732 /* 我的 */,
+				8584A5211D62EBC400E5A732 /* 首页 */,
+				851C6F841D643ADD0080DA05 /* TRMyTabBarController.h */,
+				851C6F851D643ADD0080DA05 /* TRMyTabBarController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8584A51F1D62EBC400E5A732 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5391D62ED1E00E5A732 /* ViewController */,
+				8584A5381D62ED1A00E5A732 /* View */,
+				8584A5371D62ED1500E5A732 /* ViewModel */,
+				8584A5361D62ED0F00E5A732 /* Model */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		8584A5201D62EBC400E5A732 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				85FE26671D66FE5700ED9CA2 /* TRMineViewController.h */,
+				85FE26681D66FE5700ED9CA2 /* TRMineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		8584A5211D62EBC400E5A732 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				8584A55A1D63067500E5A732 /* Model */,
+				8584A55B1D63067500E5A732 /* View */,
+				8584A55C1D63067500E5A732 /* ViewController */,
+				8584A55D1D63067500E5A732 /* ViewModel */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		8584A5221D62EBC400E5A732 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5441D62FFE300E5A732 /* AppDelegate+Custom.h */,
+				8584A5451D62FFE300E5A732 /* AppDelegate+Custom.m */,
+				8584A5461D62FFE300E5A732 /* NSObject+Parse.h */,
+				8584A5471D62FFE300E5A732 /* NSObject+Parse.m */,
+				8584A5481D62FFE300E5A732 /* NSString+YX.h */,
+				8584A5491D62FFE300E5A732 /* NSString+YX.m */,
+				8584A54A1D62FFE300E5A732 /* UIScrollView+Refresh.h */,
+				8584A54B1D62FFE300E5A732 /* UIScrollView+Refresh.m */,
+				8584A54C1D62FFE300E5A732 /* UIView+HUD.h */,
+				8584A54D1D62FFE300E5A732 /* UIView+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8584A5231D62EBC400E5A732 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5531D6300F200E5A732 /* Constants.h */,
+				8584A56D1D63077000E5A732 /* TRRequestPath.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		8584A5241D62EBC400E5A732 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5541D63017300E5A732 /* BaseNetworking.h */,
+				8584A5551D63017300E5A732 /* BaseNetworking.m */,
+				8584A5571D63050900E5A732 /* TRNetManager.h */,
+				8584A5581D63050900E5A732 /* TRNetManager.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		8584A5251D62EBC400E5A732 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				851C6F7E1D6436330080DA05 /* Discover.storyboard */,
+				851C6F801D6437120080DA05 /* Mine.storyboard */,
+				851C6F821D6437780080DA05 /* Home.storyboard */,
+				8584A5101D62EA2300E5A732 /* Main.storyboard */,
+				8584A5131D62EA2300E5A732 /* Assets.xcassets */,
+				8584A5151D62EA2300E5A732 /* LaunchScreen.storyboard */,
+				8584A53F1D62FDF000E5A732 /* InfoPlist.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8584A5261D62EBC400E5A732 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				851C6F8D1D645FAE0080DA05 /* BaseViewModel.h */,
+				851C6F8E1D645FAE0080DA05 /* BaseViewModel.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		8584A5271D62EBC400E5A732 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				851561D21D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.h */,
+				851561D31D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.m */,
+				852758F11D6ECF5500C50198 /* Classes */,
+				85FA431A1D6545E6005CC5E5 /* iCarousel */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		8584A5361D62ED0F00E5A732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5281D62EC4200E5A732 /* DiscoverModel.h */,
+				8584A5291D62EC4200E5A732 /* DiscoverModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8584A5371D62ED1500E5A732 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8584A52B1D62EC6C00E5A732 /* DiscoverViewModel.h */,
+				8584A52C1D62EC6C00E5A732 /* DiscoverViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8584A5381D62ED1A00E5A732 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8584A52E1D62ECDA00E5A732 /* DiscoverCell.h */,
+				8584A52F1D62ECDA00E5A732 /* DiscoverCell.m */,
+				8584A5301D62ECDA00E5A732 /* DiscoverCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8584A5391D62ED1E00E5A732 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5331D62ECF900E5A732 /* DiscoverViewController.h */,
+				8584A5341D62ECF900E5A732 /* DiscoverViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8584A55A1D63067500E5A732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8584A5641D63070200E5A732 /* TRUFocusListModel.h */,
+				8584A5651D63070200E5A732 /* TRUFocusListModel.m */,
+				8584A5671D63071700E5A732 /* TRSearchTagModel.h */,
+				8584A5681D63071700E5A732 /* TRSearchTagModel.m */,
+				8584A56A1D63073A00E5A732 /* TRHomePageModel.h */,
+				8584A56B1D63073A00E5A732 /* TRHomePageModel.m */,
+				853BF6151D658922003077C1 /* TRActivityModel.h */,
+				853BF6161D658922003077C1 /* TRActivityModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8584A55B1D63067500E5A732 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				851C6F8A1D64522E0080DA05 /* TRHomeHeaderView.h */,
+				851C6F8B1D64522E0080DA05 /* TRHomeHeaderView.m */,
+				8524FAD41D6AA4500009513E /* TRHomeCell.h */,
+				8524FAD51D6AA4500009513E /* TRHomeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8584A55C1D63067500E5A732 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				851C6F871D644EC60080DA05 /* TRHomeViewController.h */,
+				851C6F881D644EC60080DA05 /* TRHomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8584A55D1D63067500E5A732 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				851C6F901D645FC10080DA05 /* TRHomeViewModel.h */,
+				851C6F911D645FC10080DA05 /* TRHomeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85FA431A1D6545E6005CC5E5 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				85FA431B1D6545E6005CC5E5 /* iCarousel.h */,
+				85FA431C1D6545E6005CC5E5 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		A44185A26DDC82A89CF87F79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE654940673BD48956B24A /* Pods-DaDaCook.debug.xcconfig */,
+				D16482D8FAB77A78AC24BCB0 /* Pods-DaDaCook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8584A5031D62EA2200E5A732 /* DaDaCook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8584A51B1D62EA2300E5A732 /* Build configuration list for PBXNativeTarget "DaDaCook" */;
+			buildPhases = (
+				5C6BD1C292DCF10A9A50DA5A /* [CP] Check Pods Manifest.lock */,
+				8584A5001D62EA2200E5A732 /* Sources */,
+				8584A5011D62EA2200E5A732 /* Frameworks */,
+				8584A5021D62EA2200E5A732 /* Resources */,
+				C1C6769C284BDBDA5CC81613 /* [CP] Embed Pods Frameworks */,
+				1F1F812C5117EC0249A6A022 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaDaCook;
+			productName = DaDaCook;
+			productReference = 8584A5041D62EA2200E5A732 /* DaDaCook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8584A4FC1D62EA2200E5A732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					8584A5031D62EA2200E5A732 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8584A4FF1D62EA2200E5A732 /* Build configuration list for PBXProject "DaDaCook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 8584A4FB1D62EA2200E5A732;
+			productRefGroup = 8584A5051D62EA2200E5A732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8584A5031D62EA2200E5A732 /* DaDaCook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8584A5021D62EA2200E5A732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8584A5321D62ECDA00E5A732 /* DiscoverCell.xib in Resources */,
+				8584A5171D62EA2300E5A732 /* LaunchScreen.storyboard in Resources */,
+				8584A5141D62EA2300E5A732 /* Assets.xcassets in Resources */,
+				8584A5121D62EA2300E5A732 /* Main.storyboard in Resources */,
+				851C6F811D6437120080DA05 /* Mine.storyboard in Resources */,
+				8584A53D1D62FDF000E5A732 /* InfoPlist.strings in Resources */,
+				851C6F7F1D6436330080DA05 /* Discover.storyboard in Resources */,
+				851C6F831D6437780080DA05 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1F812C5117EC0249A6A022 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaDaCook/Pods-DaDaCook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C6BD1C292DCF10A9A50DA5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C6769C284BDBDA5CC81613 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaDaCook/Pods-DaDaCook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8584A5001D62EA2200E5A732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8584A5661D63070200E5A732 /* TRUFocusListModel.m in Sources */,
+				8584A5521D62FFE300E5A732 /* UIView+HUD.m in Sources */,
+				8524FAD61D6AA4500009513E /* TRHomeCell.m in Sources */,
+				8584A5591D63050900E5A732 /* TRNetManager.m in Sources */,
+				8584A54E1D62FFE300E5A732 /* AppDelegate+Custom.m in Sources */,
+				851561D41D6FD47800821BFA /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				8522D76E1D6D7AF500FCB7B8 /* TRCommonDishCell.m in Sources */,
+				8584A5501D62FFE300E5A732 /* NSString+YX.m in Sources */,
+				8584A5691D63071700E5A732 /* TRSearchTagModel.m in Sources */,
+				8584A50C1D62EA2200E5A732 /* AppDelegate.m in Sources */,
+				852758FC1D6ECF5500C50198 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				8584A5561D63017300E5A732 /* BaseNetworking.m in Sources */,
+				855F97821D6C52AD00EE5D3D /* TRLastCommentModel.m in Sources */,
+				851C6F861D643ADD0080DA05 /* TRMyTabBarController.m in Sources */,
+				851C6F8F1D645FAE0080DA05 /* BaseViewModel.m in Sources */,
+				855F977C1D6C38DC00EE5D3D /* TRDetailTagsModel.m in Sources */,
+				8584A5351D62ECF900E5A732 /* DiscoverViewController.m in Sources */,
+				855F97761D6C2E6700EE5D3D /* TRDetailViewController.m in Sources */,
+				8584A52A1D62EC4200E5A732 /* DiscoverModel.m in Sources */,
+				855F977F1D6C4E5D00EE5D3D /* TRDishListModel.m in Sources */,
+				851C6F8C1D64522E0080DA05 /* TRHomeHeaderView.m in Sources */,
+				852758FB1D6ECF5500C50198 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				8522D7711D6D7F2900FCB7B8 /* TRDetailViewModel.m in Sources */,
+				853BF6171D658922003077C1 /* TRActivityModel.m in Sources */,
+				8584A52D1D62EC6C00E5A732 /* DiscoverViewModel.m in Sources */,
+				85FE26691D66FE5700ED9CA2 /* TRMineViewController.m in Sources */,
+				852758FA1D6ECF5500C50198 /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				851562441D70332400821BFA /* TRKitchenMapViewController.m in Sources */,
+				851C6F921D645FC10080DA05 /* TRHomeViewModel.m in Sources */,
+				852758F01D6ECBBA00C50198 /* TRRecommendCell.m in Sources */,
+				85FA431D1D6545E6005CC5E5 /* iCarousel.m in Sources */,
+				851C6F891D644EC60080DA05 /* TRHomeViewController.m in Sources */,
+				8584A5511D62FFE300E5A732 /* UIScrollView+Refresh.m in Sources */,
+				8584A54F1D62FFE300E5A732 /* NSObject+Parse.m in Sources */,
+				8584A56C1D63073A00E5A732 /* TRHomePageModel.m in Sources */,
+				855F97791D6C2EC000EE5D3D /* TRDetailModel.m in Sources */,
+				852758FD1D6ECF5500C50198 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				8584A5311D62ECDA00E5A732 /* DiscoverCell.m in Sources */,
+				8584A5091D62EA2200E5A732 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8584A5101D62EA2300E5A732 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8584A5111D62EA2300E5A732 /* Base */,
+				8584A5401D62FDFB00E5A732 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8584A5151D62EA2300E5A732 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8584A5161D62EA2300E5A732 /* Base */,
+				8584A5411D62FDFB00E5A732 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8584A53F1D62FDF000E5A732 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8584A53E1D62FDF000E5A732 /* Base */,
+				8584A5421D62FDFB00E5A732 /* zh-Hans */,
+				8584A5431D62FE0300E5A732 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8584A5191D62EA2300E5A732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8584A51A1D62EA2300E5A732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8584A51C1D62EA2300E5A732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFE654940673BD48956B24A /* Pods-DaDaCook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = DaDaCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tarena.DaDaCook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8584A51D1D62EA2300E5A732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16482D8FAB77A78AC24BCB0 /* Pods-DaDaCook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = DaDaCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tarena.DaDaCook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8584A4FF1D62EA2200E5A732 /* Build configuration list for PBXProject "DaDaCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8584A5191D62EA2300E5A732 /* Debug */,
+				8584A51A1D62EA2300E5A732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8584A51B1D62EA2300E5A732 /* Build configuration list for PBXNativeTarget "DaDaCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8584A51C1D62EA2300E5A732 /* Debug */,
+				8584A51D1D62EA2300E5A732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8584A4FC1D62EA2200E5A732 /* Project object */;
+}
